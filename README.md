@@ -1,32 +1,39 @@
-# React + TypeScript + Vite
+# Fix It First 🌿 — Circular Engine Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An AI-powered circular economy dashboard designed to reduce e-waste and consumer discard rates. By analyzing item condition, usage history, and fault descriptions, **Fix It First** calculates real-time repairability scores, carbon emission savings, financial payback periods, and step-by-step restoration roadmaps using the Google Gemini API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Key Features
 
-## React Compiler
+- **Dynamic Repairability Scoring**: Evaluates the feasibility of repair vs. replacement based on condition, age, and defect severity.
+- **Carbon & Cost Intelligence**: Quantifies avoided carbon footprint ($CO_2e$) and estimated savings compared to buying new.
+- **AI-Powered Diagnostics**: Integrates Gemini for domain-specific troubleshooting steps and part recommendations.
+- **Session Vault**: Retains an active history of evaluated items for comparison and export.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **Framework**: React 18 with TypeScript
+- **Bundler**: Vite
+- **Styling**: Tailwind CSS
+- **AI Engine**: Google Gemini API (`@google/genai`)
+- **Icons**: Lucide React
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+---
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- A Gemini API Key from [Google AI Studio](https://aistudio.google.com/)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Naitik-OwnsthePace/fix-it-first.git
+   cd fix-it-first
